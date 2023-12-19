@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code{
+  font-family: source-code-pro,menlo,monaco,consolas,'courier New',monospace;
+
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  margin-left: 45%;
+  margin-top:20%;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext-top{
+  visibility: hidden;
+  background-color: #000;
+  color: #fff;
+  text-align:center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index:1;
+  width: 200px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -90%;
+}
+
+.tooltip:hover .tooltiptext-top{
+  visibility: visible;
+
+}
+
+.tooltip .tooltiptext-top::after{
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip .tooltiptext-bottom{
+  visibility: hidden;
+  margin-top: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top: 100%;
+  left: 50%;
+  margin-left: -90%;
+}
+
+.tooltip:hover .tooltiptext-bottom{
+  visibility: visible;
+}
+
+.tooltip .tooltiptext-bottom::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50px;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+
+}
+
+.tooltip .tooltiptext-left {
+  visibility: hidden;
+  margin-right: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top: -5px;
+  right: 105%;
+
+}
+
+.tooltip:hover .tooltiptext-left {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext-left::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+
+}
+
+.tooltip .tooltiptext-right {
+  visibility: hidden;
+  margin-left: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top: -5px;
+  left: 105%;
+
+}
+
+.tooltip:hover .tooltiptext-right{
+  visibility: visible;
+}
+.tooltip .tooltiptext-right::after{
+  content: " ";
+  position: absolute;
+  top: 50px;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
